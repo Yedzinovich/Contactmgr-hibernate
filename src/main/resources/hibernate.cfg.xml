@@ -7,11 +7,14 @@
         <!-- sql dialect -->
         <property name="dialect">org.hibernate.dialect.H2Dialect</property>
 
-        <!-- create database schema on startup-->
-        <property name="hbm2ddl.auto">create</property>
+        <!-- (create) update database schema on startup-->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- show the queries prepared by hibernate-->
+        <property name="show_sql">true</property>
 
         <!-- names the annotated entity classes -->
-        <mapping class="com.inna.contactmgr.model.Contact"></mapping>
+        <mapping class="com.inna.contactmgr.model.Contact"/>
 
     </session-factory>
 </hibernate-configuration>

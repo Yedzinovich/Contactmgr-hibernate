@@ -14,4 +14,5 @@ repositories {
 dependencies {
     compile 'org.hibernate:hibernate-core:5.3.7.Final'
     compile 'com.h2database:h2:1.4.199'
+    compile 'javax.transaction:jta:1.1'
 }
